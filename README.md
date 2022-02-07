@@ -20,4 +20,9 @@ docker image inspect --format="{{ .Config.OnBuild }}" base
 
 docker container run -it --name stopsignal -d stopsignal
 docker container inspect stopsignal
+
+docker image inspect --format="{{ .Config.Labels }}" label
+map[description:This image is Web maintainer:seunggab kim<seunggabi@gmail.com> title:Web version:1.0]
+
+docker build -t arg -f arg.dockerfile . --build-arg NAME=seunggabi
 ```
