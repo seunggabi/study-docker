@@ -26,3 +26,9 @@ map[description:This image is Web maintainer:seunggab kim<seunggabi@gmail.com> t
 
 docker build -t arg -f arg.dockerfile . --build-arg NAME=seunggabi
 ```
+```
+docker image pull seunggabi/study-docker
+
+docker image inspect --format="{{ .RepoTags }}" seunggabi/study-docker
+[seunggabi/study-docker:latest]
+```
