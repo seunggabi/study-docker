@@ -32,3 +32,13 @@ docker image pull seunggabi/study-docker
 docker image inspect --format="{{ .RepoTags }}" seunggabi/study-docker
 [seunggabi/study-docker:latest]
 ```
+```
+docker search registry
+docker image pull registry
+docker image ls registry
+
+docker container run -d -p 5000:5000 --name reg
+istry registry
+
+docker container ls
+```
